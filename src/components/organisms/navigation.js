@@ -81,7 +81,7 @@ const NavLinks = styled.ul`
 
   p {
     color: white; 
-    margin-top: -30px; 
+    margin-top: 0px; 
     font-size: 16px;
 
     @media ${media.sm} {

@@ -23,13 +23,10 @@ const SectionCheckout = () => {
     <Container content>
       <CheckoutContainer>
         <Content>
-          <h6>Checkout</h6>
-          <h1>Ready to start building the future?</h1>
-          <p>
-            Build websites that quickly accept payments with future-proof
-            technology that runs lightning-fast globally.
-          </p>
-          <Seperator />
+          <h1>Ayuda a un hermano venezolano</h1>
+          <h6>
+            Envíale apoyo a la gente de tu país que más lo necesita.
+          </h6>
           <SliderTestimonials />
         </Content>
         {/* PASTE MOONCLERK FORM HTML ID HERE */}
@@ -47,7 +44,7 @@ const CheckoutContainer = styled(Container)`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 98%;
   grid-template-columns: var(--gridSplit);
 
   @media ${media.lg} {
@@ -58,24 +55,31 @@ const CheckoutContainer = styled(Container)`
 const Content = styled.div`
   padding: var(--spacingContent);
   width: 100%;
+  margin-top: 200px; 
 
-  @media ${media.lg} {
+  @media ${media.sm} {
     width: 50%;
+    margin-top: 0px; 
   }
 
   h6 {
     color: ${props => props.theme.colors.lightGray};
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0rem;
     text-transform: uppercase;
   }
 
   h1 {
     color: ${props => props.theme.colors.white};
+
+    @media ${media.lg} {
+    margin-top: -30px; 
+    }
   }
 
   p {
     color: ${props => props.theme.colors.lightGray};
+    margin-bottom: -10px;
   }
 `
 

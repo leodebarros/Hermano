@@ -11,23 +11,31 @@ const Navigation = ({ siteTitle }) => (
     <NavLinks>
       <li>
         <NavLink href="https://gatsbyjs.org" alt="">
-          GatsbyJs
+          Hombres
+          
         </NavLink>
+        <p>191</p>
       </li>
       <li>
         <NavLink href="https://moonclerk.com" alt="">
-          MoonClerk
+          Mujeres
+          
         </NavLink>
+        <p>233</p>
       </li>
       <li>
         <NavLink href="https://stripe.com" alt="">
-          Stripe
+          Niños
+          
         </NavLink>
+        <p>130</p>
       </li>
       <li>
         <NavLink href="https://netlify.com" alt="">
-          Netlify
+          Ancianos
+          
         </NavLink>
+        <p>41</p>
       </li>
     </NavLinks>
   </Nav>
@@ -53,6 +61,7 @@ const Nav = styled.nav`
   width: 100vw;
   z-index: 1000;
   flex-wrap: wrap;
+  
 `
 
 const NavLinks = styled.ul`
@@ -62,12 +71,23 @@ const NavLinks = styled.ul`
   margin: 0;
   padding-left: 0;
   padding-top: 2rem;
+  margin-top: 1em; 
+  
 
   @media ${media.lg} {
     padding-left: 2rem;
     padding-top: 0;
   }
 
+  p {
+    color: white; 
+    margin-top: -30px; 
+    font-size: 16px;
+
+    @media ${media.sm} {
+    margin-top: 0px; 
+  }
+  }
   li {
     margin: 0;
 
@@ -79,4 +99,5 @@ const NavLinks = styled.ul`
 
 const NavLink = styled(Link)`
   margin-right: 2rem;
+  color: ${props => props.theme.colors.lightGray};
 `

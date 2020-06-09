@@ -75,9 +75,9 @@ class SliderTestimonials extends React.Component {
           <Carousel>
             <Slider {...settings} ref={slider => (this.slider1 = slider)}>
               <SlideTestimonial
-                testimonial=" “Our entire process for building and launching websites that need toaccept payments has completely changed. We went from long arduous projects with tons of integrations and custom code, to a simple and fast setup with massive performance improvements.”"
-                name="Chance Curtis"
-                title="CTO, Some Ad Agency"
+                testimonial=" “Desde hace más de tres años gracias a mi Hermano he podido aliviar el impacto tan fuerte que generó en mi patrominio la crisis económica y la hiperinflación. Gracias a mi Hermano he podido llevar a mi casa alimentos y medicinas para el bienestar de mi familia.”"
+                name="Ligia Rojas"
+                title="Administradora, Madre y Esposa."
               />
               <SlideTestimonial
                 testimonial=" “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”"
@@ -158,7 +158,7 @@ class SliderTestimonials extends React.Component {
 export default SliderTestimonials
 
 const Carousel = styled.div`
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 
   .carouselNav {
     .slick-slide {
@@ -203,6 +203,7 @@ const SlideAvatar = styled.div`
   margin: 0.5rem 0.75rem 1.5rem;
   outline: none;
   width: 40px;
+  
 
   &:focus {
     outline: none;

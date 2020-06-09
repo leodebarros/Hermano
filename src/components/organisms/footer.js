@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Logo from "@atoms/logo"
+import DarkLogo from "@atoms/darkLogo"
 import Link from "@atoms/link"
 import LinkTop from "@atoms/linkTop"
 import { media } from "@utils/media"
@@ -9,13 +10,12 @@ const Footer = () => {
   return (
     <FooterContainer>
       <LogoContainer>
-        <Logo />
+        <DarkLogo />
       </LogoContainer>
       <Info>
         <Contact>
           <a href="800.120.2132">Phone: 800-120-2132</a>
           <a href="mailto:info@google.com">Email: hi@gatsbystarter.com</a>
-          <a href="https://icons8.com/">Illustrations Open Sourced by Icons8</a>
         </Contact>
         <Social>
           <li>
@@ -32,13 +32,13 @@ const Footer = () => {
 
       <Navigation>
         <li>
-          <Link href="https://instagram.com">MoonClerk</Link>
+          <Link href="https://instagram.com">Términos de Servicio</Link>
         </li>
         <li>
-          <Link href="https://twitter.com">Gatsby</Link>
+          <Link href="https://twitter.com">Política de Privacidad</Link>
         </li>
         <li>
-          <Link href="https://facebook.com">Stripe</Link>
+          <Link href="https://facebook.com">Trabaja con Nosotros</Link>
         </li>
       </Navigation>
       <LinkTop />
@@ -58,7 +58,7 @@ const FooterContainer = styled.footer`
   position: relative;
 
   @media ${media.lg} {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1.75fr;
   }
 `
 
@@ -72,6 +72,10 @@ const Contact = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  margin-top: 50px; 
+
+  @media ${media.lg} {
+  margin-top: 0px;   
 
   a {
     color: ${props => props.theme.colors.gray};
@@ -87,6 +91,7 @@ const Contact = styled.div`
 const Social = styled.ul`
   list-style: none;
   margin: 0;
+  margin-bottom: 2em; 
 
   li {
     margin-bottom: 0.5rem;
@@ -99,6 +104,7 @@ const Navigation = styled.ul`
   margin: 0;
 
   li {
-    margin-right: 1rem;
+    margin-right: 2rem;
+    font-size: 16px;
   }
 `

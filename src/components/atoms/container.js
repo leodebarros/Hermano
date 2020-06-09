@@ -21,9 +21,9 @@ const Container = styled.section`
   }};
   height: 100%;
   margin: 0 auto;
-  padding: ${props => {
+  /* padding: ${props => {
     if (props.content) return "0 var(--spacingContent)"
-  }};
+  }}; */
   padding-bottom: ${props => {
     if (props.content) return "var(--spacingSection)"
   }};
